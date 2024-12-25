@@ -1,6 +1,6 @@
 public class School {
-    private Teacher[] teachers = new Teacher[100];
-    private Student[] students = new Student[100];
+    private Teacher[] teachers = new Teacher[500];
+    private Student[] students = new Student[500];
     private int teacherCount = 0;
     private int studentCount = 0;
     private int totalMoneyEarned = 0;
