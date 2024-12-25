@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class School {
-    private MyList<Teacher> teachers = new MyList<>();
-    private MyList<Student> students = new MyList<>();
+    private ArrayList<Teacher> teachers = new ArrayList<>();
+    private ArrayList<Student> students = new ArrayList<>();
     private int totalMoneyEarned = 0;
     private int totalMoneyPaid = 0;
     public void addTeacher(Teacher teacher) {

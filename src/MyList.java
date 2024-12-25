@@ -1,5 +1,17 @@
 public class MyList<T> {
-    private Object[] elements = new Object[10];
+
+    private Object[] elements;
+
+    public MyList() {
+        this(DEFAULT_CAPACITY);
+    }
+
+    public MyList(int length) {
+        elements = new Object[length];
+    }
+
+    private static final int DEFAULT_CAPACITY = 10;
+
     private int size = 0;
 
     public void add(T element) {
