@@ -1,6 +1,6 @@
 public class School {
-    private TeacherList teachers = new TeacherList();
-    private StudentList students = new StudentList();
+    private MyList teachers = new MyList();
+    private MyList students = new MyList();
     private int totalMoneyEarned = 0;
     private int totalMoneyPaid = 0;
     public void addTeacher(Teacher teacher) {
