@@ -1,8 +1,8 @@
-public class MyList {
+public class MyList<T> {
     private Object[] elements = new Object[10];
     private int size = 0;
 
-    public void add(Object element) {
+    public void add(T element) {
         if (size >= elements.length) {
             Object[] newElements = new Object[elements.length * 2];
             for (int i = 0; i < elements.length; i++) {
@@ -13,8 +13,9 @@ public class MyList {
         elements[size++] = element;
     }
 
-    public Object get(int index) {
-        return elements[index];
+    @SuppressWarnings("unchecked")
+    public T get(int index) {
+        return (T) elements[index];
     }
 
     public int size() {
